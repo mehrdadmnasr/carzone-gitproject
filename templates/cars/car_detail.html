@@ -13,7 +13,7 @@
         <div class="breadcrumb-areas">
             <h1>{{single_car.car_title}}</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li class="active">{{single_car.car_title}}</li>
             </ul>
         </div>
@@ -192,7 +192,6 @@
                             <li>
                                 <span>Milage: </span>{{single_car.milage}}
                             </li>
-
                             <li>
                                 <span>Fuel Type: </span>{{single_car.fuel_type}}
                             </li>
